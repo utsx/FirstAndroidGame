@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="start">Начать игру</string>
+    <string name="game">Игра</string>
+    <string name="next">Далее</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="training_mode_text">Тренировка</string>
+    <string name="endless_mode_text">Бесконечный режим</string>
+    <string name="time_mode_text">Режим на время</string>
+    <string name="_0">0</string>
+    <string name="start_button">Старт</string>
+</resources>
