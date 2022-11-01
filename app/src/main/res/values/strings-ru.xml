@@ -9,4 +9,12 @@
     <string name="time_mode_text">Режим на время</string>
     <string name="_0">0</string>
     <string name="start_button">Старт</string>
+    <string name="training_end">Тренировка окончена</string>
+    <string name="time_expired">Время вышло</string>
+    <string name="buffer">текст</string>
+    <string name="_60">60</string>
+    <string name="records">Рекорды</string>
+    <string name="_3">3</string>
+    <string name="end_lives">Жизни закончились</string>
+    <string name="main_menu">Главное меню</string>
 </resources>

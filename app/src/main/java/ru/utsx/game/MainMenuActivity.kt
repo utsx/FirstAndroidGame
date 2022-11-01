@@ -1,20 +1,14 @@
 package ru.utsx.game
 
-import android.app.GameManager
 import android.content.Intent
-import android.opengl.Matrix
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
-import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
-import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.google.android.material.textfield.TextInputEditText
-import java.util.Objects
 
-class MainActivity : AppCompatActivity() {
+class MainMenuActivity : AppCompatActivity() {
 
     private var startButton: MaterialButton? = null
     private var nextButton: MaterialButton? = null
@@ -22,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.main_menu)
+        setContentView(R.layout.activity_main_menu)
         startButton = findViewById(R.id.start_button)
         nextButton = findViewById(R.id.next_button)
         inputText = findViewById(R.id.edit_text)
@@ -51,7 +45,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun beginGame(name : String){
-        startActivity(Intent(this@MainActivity, ModeActivity::class.java))
+        var i = Intent(this@MainMenuActivity, ModeActivity::class.java)
+        i.putExtra("name", name)
+        startActivity(i)
     }
 
     private fun startGame(){
